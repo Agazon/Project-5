@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+</head>
+<body>
+	<script>		
+	   /*var getA = +prompt("Введите первое число ",4);
+       var getB = +prompt("Введите второе число ",1);
+       var getC = prompt("Введите знак + || - || / || * || %");
+      
+       function getResult(a,b,c)
+       {
+         if(c ==="+") {         
+            return a + b;
+         }  else if(c=="*") {       
+            return a * b;
+         } else if(c=="/") {        
+            return a / b;
+         } else if (c == "-") {           
+            return a - b;
+         } else {
+         	return a % b;
+         }
+
+       }
+       var result = getResult(getA, getB, getC);
+       alert(result);*/
+
+      
+   
+		var str = new String(prompt("Введите строку: "));
+       	var str2 = new String(prompt("Введите символы,которые нужно удалить: "));
+        
+        var strArr = [] 
+        strArr = str2; 
+       
+        function foo(string,arr){
+        	for(var i = 0; i < string.length; i++){        	
+        		for(var j = 0; j < arr.length; j++){
+        			if(string[i] === arr[j]){      
+        			    var array = new RegExp(string[i],'g');  		
+        				string =string.replace(array,'');        			 
+        			}          
+        		}
+       		 }
+       		 return string;
+        }
+        var result = foo(str,strArr);
+        alert(result);
+     
+
+     
+
+       
+	</script>
+</html>
+</body>
