@@ -27,16 +27,9 @@
        }
        var result = getResult(getA, getB, getC);
        alert(result);*/
-
-      
-   
-		var str = new String(prompt("Введите строку: "));
-       	var str2 = new String(prompt("Введите символы,которые нужно удалить: "));
-        
-        var strArr = [] 
-        strArr = str2; 
-       
-        function foo(string,arr){
+	
+		
+        function foo(string,arr){         
         	for(var i = 0; i < string.length; i++){        	
         		for(var j = 0; j < arr.length; j++){
         			if(string[i] === arr[j]){      
@@ -47,7 +40,7 @@
        		 }
        		 return string;
         }
-        var result = foo(str,strArr);
+        var result = foo("gege sege",['g','s']);
         alert(result);
      
 
